@@ -1,6 +1,6 @@
 $gray-footer: #1a1a1a !default;
 $footer-text-color: #8a8a8a !default;
-$footer-link-color: #ffd700 !default;
+$footer-link-color: #F6DB00 !default;
 
 .footer {
   background-color: $gray-footer !important;
@@ -14,13 +14,14 @@ $footer-link-color: #ffd700 !default;
     margin: 0;
   }
 
-  .footer-link-highlight {
-    color: $footer-link-color;
+  .footer-link-highlight,
+  a.footer-link-highlight {
+    color: $footer-link-color !important;
     font-weight: bold;
     text-decoration: none;
 
     &:hover {
-      color: lighten($footer-link-color, 15%);
+      color: lighten($footer-link-color, 15%) !important;
       text-decoration: underline;
     }
   }
