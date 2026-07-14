@@ -1,5 +1,28 @@
-$gray-footer: #fcfcfc !default;
+$gray-footer: #1a1a1a !default;
+$footer-text-color: #8a8a8a !default;
+$footer-link-color: #ffd700 !default;
 
 .footer {
-  background-color: var(--pgn-color-light-100, $gray-footer);
+  background-color: $gray-footer !important;
+  color: $footer-text-color;
+  border-top: none !important;
+
+  .footer-copyright,
+  .footer-trademark {
+    font-size: 0.8rem;
+    color: $footer-text-color;
+    margin: 0;
+  }
+
+  .footer-link-highlight {
+    color: $footer-link-color;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      color: lighten($footer-link-color, 15%);
+      text-decoration: underline;
+    }
+  }
 }
+

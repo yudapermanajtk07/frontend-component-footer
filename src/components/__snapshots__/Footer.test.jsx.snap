@@ -2,132 +2,175 @@
 
 exports[`<Footer /> renders correctly renders with a language selector 1`] = `
 <footer
-  className="footer d-flex border-top py-3 px-4"
+  className="footer py-3 px-4 text-center"
   role="contentinfo"
 >
   <div
-    className="container-fluid d-flex"
+    className="container-fluid d-flex flex-column align-items-center"
   >
-    <a
-      aria-label="edX Home"
-      className="d-block"
-      href="http://localhost:18000"
-      onClick={[Function]}
+    <p
+      className="footer-copyright mb-1"
     >
-      <img
-        alt="Powered by Open edX"
-        src="https://edx-cdn.org/v3/default/logo-trademark.svg"
-        style={
-          {
-            "maxHeight": 45,
-          }
-        }
-      />
-    </a>
-    <div
-      className="flex-grow-1"
-    />
-    <form
-      className="form-inline"
-      onSubmit={[Function]}
-    >
-      <div
-        className="form-group"
+      © 2026 
+      <a
+        className="footer-link-highlight"
+        href="http://localhost:18000"
+        onClick={[Function]}
       >
-        <label
-          className="d-inline-block m-0"
-          htmlFor="site-footer-language-select"
+        MOOC UI
+      </a>
+       - 
+      <a
+        className="footer-link-highlight"
+        href="http://localhost:18000"
+        onClick={[Function]}
+      >
+        LMS
+      </a>
+    </p>
+    <p
+      className="footer-trademark mb-0"
+    >
+      edX and MOOC UI, and the edX and MOOC UI logos are registered trademarks of 
+      <a
+        className="footer-link-highlight"
+        href="http://localhost:18000"
+        onClick={[Function]}
+      >
+        edX Inc.
+      </a>
+    </p>
+    <div
+      className="mt-3"
+    >
+      <form
+        className="form-inline"
+        onSubmit={[Function]}
+      >
+        <div
+          className="form-group"
         >
-          Choose Language
-        </label>
-        <select
-          className="form-control-sm mx-2"
-          defaultValue="en"
-          id="site-footer-language-select"
-          name="site-footer-language-select"
-        >
-          <option
-            value="en"
+          <label
+            className="d-inline-block m-0"
+            htmlFor="site-footer-language-select"
           >
-            English
-          </option>
-          <option
-            value="es"
+            Choose Language
+          </label>
+          <select
+            className="form-control-sm mx-2"
+            defaultValue="en"
+            id="site-footer-language-select"
+            name="site-footer-language-select"
           >
-            Español
-          </option>
-        </select>
-        <button
-          className="btn btn-outline-primary btn-sm"
-          data-testid="site-footer-submit-btn"
-          type="submit"
-        >
-          Apply
-        </button>
-      </div>
-    </form>
+            <option
+              value="en"
+            >
+              English
+            </option>
+            <option
+              value="es"
+            >
+              Español
+            </option>
+          </select>
+          <button
+            className="btn btn-outline-primary btn-sm"
+            data-testid="site-footer-submit-btn"
+            type="submit"
+          >
+            Apply
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
 </footer>
 `;
 
 exports[`<Footer /> renders correctly renders without a language selector 1`] = `
 <footer
-  className="footer d-flex border-top py-3 px-4"
+  className="footer py-3 px-4 text-center"
   role="contentinfo"
 >
   <div
-    className="container-fluid d-flex"
+    className="container-fluid d-flex flex-column align-items-center"
   >
-    <a
-      aria-label="edX Home"
-      className="d-block"
-      href="http://localhost:18000"
-      onClick={[Function]}
+    <p
+      className="footer-copyright mb-1"
     >
-      <img
-        alt="Powered by Open edX"
-        src="https://edx-cdn.org/v3/default/logo-trademark.svg"
-        style={
-          {
-            "maxHeight": 45,
-          }
-        }
-      />
-    </a>
-    <div
-      className="flex-grow-1"
-    />
+      © 2026 
+      <a
+        className="footer-link-highlight"
+        href="http://localhost:18000"
+        onClick={[Function]}
+      >
+        MOOC UI
+      </a>
+       - 
+      <a
+        className="footer-link-highlight"
+        href="http://localhost:18000"
+        onClick={[Function]}
+      >
+        LMS
+      </a>
+    </p>
+    <p
+      className="footer-trademark mb-0"
+    >
+      edX and MOOC UI, and the edX and MOOC UI logos are registered trademarks of 
+      <a
+        className="footer-link-highlight"
+        href="http://localhost:18000"
+        onClick={[Function]}
+      >
+        edX Inc.
+      </a>
+    </p>
   </div>
 </footer>
 `;
 
 exports[`<Footer /> renders correctly renders without a language selector in es 1`] = `
 <footer
-  className="footer d-flex border-top py-3 px-4"
+  className="footer py-3 px-4 text-center"
   role="contentinfo"
 >
   <div
-    className="container-fluid d-flex"
+    className="container-fluid d-flex flex-column align-items-center"
   >
-    <a
-      aria-label="edX Home"
-      className="d-block"
-      href="http://localhost:18000"
-      onClick={[Function]}
+    <p
+      className="footer-copyright mb-1"
     >
-      <img
-        alt="Powered by Open edX"
-        src="https://edx-cdn.org/v3/default/logo-trademark.svg"
-        style={
-          {
-            "maxHeight": 45,
-          }
-        }
-      />
-    </a>
-    <div
-      className="flex-grow-1"
-    />
+      © 2026 
+      <a
+        className="footer-link-highlight"
+        href="http://localhost:18000"
+        onClick={[Function]}
+      >
+        MOOC UI
+      </a>
+       - 
+      <a
+        className="footer-link-highlight"
+        href="http://localhost:18000"
+        onClick={[Function]}
+      >
+        LMS
+      </a>
+    </p>
+    <p
+      className="footer-trademark mb-0"
+    >
+      edX and MOOC UI, and the edX and MOOC UI logos are registered trademarks of 
+      <a
+        className="footer-link-highlight"
+        href="http://localhost:18000"
+        onClick={[Function]}
+      >
+        edX Inc.
+      </a>
+    </p>
   </div>
 </footer>
 `;

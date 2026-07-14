@@ -40,27 +40,52 @@ const SiteFooter = ({
   return (
     <footer
       role="contentinfo"
-      className="footer d-flex border-top py-3 px-4"
+      className="footer py-3 px-4 text-center"
     >
-      <div className="container-fluid d-flex">
-        <a
-          className="d-block"
-          href={config.LMS_BASE_URL}
-          aria-label={intl.formatMessage(messages['footer.logo.ariaLabel'])}
-          onClick={externalLinkClickHandler}
-        >
-          <img
-            style={{ maxHeight: 45 }}
-            src={logo || config.LOGO_TRADEMARK_URL}
-            alt={intl.formatMessage(messages['footer.logo.altText'])}
-          />
-        </a>
-        <div className="flex-grow-1" />
+      <div className="container-fluid d-flex flex-column align-items-center">
+        <p className="footer-copyright mb-1">
+          {intl.formatMessage(messages['footer.copyright'], {
+            year: new Date().getFullYear(),
+            moocUiLink: (
+              <a
+                href={config.LMS_BASE_URL}
+                onClick={externalLinkClickHandler}
+                className="footer-link-highlight"
+              >
+                MOOC UI
+              </a>
+            ),
+            lmsLink: (
+              <a
+                href={config.LMS_BASE_URL}
+                onClick={externalLinkClickHandler}
+                className="footer-link-highlight"
+              >
+                LMS
+              </a>
+            ),
+          })}
+        </p>
+        <p className="footer-trademark mb-0">
+          {intl.formatMessage(messages['footer.trademark'], {
+            edxIncLink: (
+              <a
+                href={config.LMS_BASE_URL}
+                onClick={externalLinkClickHandler}
+                className="footer-link-highlight"
+              >
+                edX Inc.
+              </a>
+            ),
+          })}
+        </p>
         {showLanguageSelector && (
-          <LanguageSelector
-            options={supportedLanguages}
-            onSubmit={onLanguageSelected}
-          />
+          <div className="mt-3">
+            <LanguageSelector
+              options={supportedLanguages}
+              onSubmit={onLanguageSelected}
+            />
+          </div>
         )}
       </div>
     </footer>

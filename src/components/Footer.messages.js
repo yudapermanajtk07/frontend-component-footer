@@ -151,6 +151,17 @@ const messages = defineMessages({
     defaultMessage: 'Page Footer',
     description: 'aria-label for the footer component',
   },
+  'footer.copyright': {
+    id: 'footer.copyright',
+    defaultMessage: '© {year} {moocUiLink} - {lmsLink}',
+    description: 'Copyright statement at the bottom of the footer.',
+  },
+  'footer.trademark': {
+    id: 'footer.trademark',
+    defaultMessage: 'edX and MOOC UI, and the edX and MOOC UI logos are registered trademarks of {edxIncLink}',
+    description: 'Trademark information statement at the bottom of the footer.',
+  },
 });
 
 export default messages;
+
